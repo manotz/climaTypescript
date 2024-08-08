@@ -53,7 +53,7 @@ const Form = ({fetchWeather}: FormProps) => {
             <select name="country" id="country" value={search.country} onChange={handleChange}>
                 <option value="">-- Seleccione --</option>
                 {countries.map(country => (
-                    <option key={country.code} value={country.code}>{country.name}</option>
+                    <option key={country.code} value={country.code} className={styles.textBlack}>{country.name}</option>
                 ))}
             </select>
         </div>
